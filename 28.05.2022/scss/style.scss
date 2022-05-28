@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+	&::before {
+		box-sizing: border-box;
+	}
+	&::after {
+		box-sizing: border-box;
+	}
+}
+body {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+.title {
+	padding: 30px 0;
+	width: 100%;
+	text-align: center;
+	background-color: #0067c2;
+	h1 {
+		color: #eee;
+	}
+	h2 {
+		color: yellow;
+	}
+}
