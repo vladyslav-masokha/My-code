@@ -392,7 +392,46 @@ body {
     font-size: 81px;
   }
   .title p a {
-    font-size: 42;
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .wrapper {
+    padding: 0 240px;
+  }
+  .logo img {
+    width: 150px;
+  }
+  #time {
+    font-size: 32px;
+  }
+  .nav .nav-link {
+    margin-left: 30px;
+    padding-bottom: 18px;
+    font-size: 32px;
+  }
+  .nav .nav-link:hover {
+    border-bottom: 4px dotted #14f082;
+  }
+  .nav .active-link {
+    border-bottom: 4px dotted #14f082;
+    margin-left: 0;
+    padding-bottom: 18px;
+  }
+  .nav .active-anime-link:hover {
+    border-top: 4px dotted #ff0000;
+    border-bottom: 4px dotted #ff0000;
+    padding: 22px 0;
+  }
+  .title h1 {
+    font-size: 200px;
+  }
+  .copyright {
+    padding: 65px 0;
+  }
+  .copyright span {
+    font-size: 32px;
   }
 }
 /*# sourceMappingURL=style.css.map */
