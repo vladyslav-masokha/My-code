@@ -529,6 +529,13 @@ button.first-btn {
     width: 100%;
     margin: 135px auto 330px auto;
   }
+
+  .nav-pills .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+  }
 }
 @media (min-width: 1024px) {
   header {
