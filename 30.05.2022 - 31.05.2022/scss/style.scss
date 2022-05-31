@@ -27,7 +27,7 @@ a {
 }
 
 body {
-	background: #000;
+	background: #1a1a1a;
 }
 
 #header {
@@ -153,6 +153,10 @@ body {
 	transform: translate(0, 100vh);
 	transition: all 0.3s linear;
 
+	&:first-child {
+		margin-left: 0;
+	}
+
 	a {
 		text-decoration: none;
 		background: #000000;
@@ -185,7 +189,6 @@ body {
 
 .active-link {
 	color: #14f082;
-	margin-left: 0;
 }
 
 .close {
@@ -208,6 +211,112 @@ body {
 
 .un-active-navbar {
 	display: none;
+}
+
+// TODO: Anime list
+.cards-item {
+	width: 220px;
+	margin-top: 20px;
+}
+
+.anime-title {
+	h3 {
+		margin-top: 10px;
+		color: #eee;
+		text-align: center;
+	}
+}
+
+.anime-img {
+	img {
+		width: 200px;
+		height: 300px;
+	}
+}
+
+.card-anime-title-inner {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.about-us-title {
+	color: #e0ffe2;
+}
+
+.about-us-container {
+	margin: 30px 0;
+}
+
+.about-us-content {
+	h3 {
+		color: #e0ffe2;
+		margin-bottom: 15px;
+		display: flex;
+		align-items: center;
+
+		font: {
+			size: 18px;
+		}
+	}
+	img {
+		padding-right: 10px;
+		width: 40px;
+	}
+	a {
+		color: #0051ff;
+		font: {
+			family: $font-stack;
+			size: 18px;
+			weight: 700;
+		}
+	}
+
+	.our-contact {
+		margin-top: 50px;
+	}
+
+	.our-mail {
+		color: #e6e6f0;
+		font: {
+			size: 24px;
+		}
+		a {
+			color: #14f082;
+			font: {
+				size: 18px;
+			}
+		}
+	}
+
+	.our-tel {
+		color: #e6e6f0;
+		font: {
+			size: 24px;
+		}
+		a {
+			color: #ff6f6f;
+			font: {
+				size: 18px;
+			}
+		}
+	}
+}
+
+.our-channel {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	.our-channel-mobile {
+		width: 100%;
+	}
+	.our-channel-tablet {
+		display: none;
+	}
+	.our-channel-desktop {
+		display: none;
+	}
 }
 
 // ! Hello user
@@ -288,6 +397,16 @@ body {
 					transition: all 0.6s ease-in-out;
 				}
 			}
+		}
+	}
+
+	.our-channel {
+		.our-channel-mobile {
+			display: none;
+		}
+		.our-channel-tablet {
+			display: block;
+			width: 100%;
 		}
 	}
 }
@@ -375,11 +494,41 @@ body {
 			}
 		}
 	}
+
+	.our-channel {
+		.our-channel-tablet {
+			display: none;
+		}
+		.our-channel-desktop {
+			display: block;
+			width: 100%;
+		}
+	}
 }
 
 @media (min-width: 1920px) {
 	.wrapper {
 		padding: 0 160px;
+	}
+
+	.logo {
+		img {
+			width: 100px;
+		}
+	}
+
+	#time {
+		font: {
+			size: 24px;
+		}
+	}
+
+	.nav {
+		&-link {
+			font: {
+				size: 24px;
+			}
+		}
 	}
 
 	#hello-user {
@@ -396,6 +545,78 @@ body {
 			a {
 				font: {
 					size: 42px;
+				}
+			}
+		}
+	}
+
+	.cards-item {
+		width: 320px;
+	}
+
+	.anime-img {
+		img {
+			width: 250px;
+			height: 350px;
+		}
+	}
+
+	.anime-title {
+		h3 {
+			font: {
+				size: 24px;
+			}
+		}
+	}
+
+	.copyright {
+		padding: 40px 0;
+		font: {
+			size: 24px;
+		}
+	}
+
+	.about-us-title {
+		font: {
+			size: 2rem;
+		}
+	}
+
+	.about-us-content {
+		h3 {
+			font: {
+				size: 36px;
+			}
+		}
+
+		img {
+			width: 50px;
+		}
+
+		a {
+			font: {
+				size: 36px;
+			}
+		}
+
+		.our-mail {
+			font: {
+				size: 36px;
+			}
+			a {
+				font: {
+					size: 24px;
+				}
+			}
+		}
+
+		.our-tel {
+			font: {
+				size: 36px;
+			}
+			a {
+				font: {
+					size: 24px;
 				}
 			}
 		}
@@ -432,7 +653,6 @@ body {
 		}
 		.active-link {
 			border-bottom: 4px dotted #14f082;
-			margin-left: 0;
 			padding-bottom: 18px;
 		}
 		.active-anime-link {
