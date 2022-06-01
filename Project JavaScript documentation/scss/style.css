@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  background: #003d40;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+.header-container {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  display: none;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.logo span {
+  color: #24a3ff;
+}
+
+.logo span:hover {
+  border-bottom: 2px dotted #24a3ff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo a {
+  color: #ffd700;
+}
+
+.logo a:hover {
+  border-bottom: 2px dotted #ffd700;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navigation {
+  padding: 0;
+}
+
+.navigation:active {
+  background: #95959c;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: #000;
+  position: absolute;
+  left: 5px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+.burger span:first-child {
+  top: 6px;
+}
+
+.burger span:nth-child(2) {
+  top: 14px;
+}
+
+.burger span:nth-child(3) {
+  top: 14px;
+}
+
+.burger span:last-child {
+  top: 22px;
+}
+
+.check-burger {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.check-burger:checked + .burger span:first-child {
+  top: -10px;
+  opacity: 0;
+}
+
+.check-burger:checked + .burger span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check-burger:checked + .burger span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.check-burger:checked + .burger span:last-child {
+  top: 60px;
+  opacity: 0;
+}
+
+.check-burger:checked + .burger + .nav {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+  border-radius: 14px;
+  background-color: #fff;
+  z-index: 1;
+  padding: 64px 12px 12px;
+  -webkit-transform: translate(0, 100vh);
+          transform: translate(0, 100vh);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.nav a {
+  text-decoration: none;
+  background: #f5f5fa;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav a:active {
+  background: #e6e6f0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover:not(.nav-active-link) {
+  color: #24a3ff;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #24a3ff;
+  padding: 7px 0;
+}
+
+.nav-link .nav-active-link {
+  color: #f0145a;
+  margin-left: 0;
+}
+
+.nav-link .nav-active-link:hover {
+  color: #f0145a;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 12px;
+  right: 12px;
+  color: #ec6f5d;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.un-active-navbar {
+  display: none;
+}
+
+#array-methods {
+  margin-top: 100px;
+}
+
+.array-methods-title h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
