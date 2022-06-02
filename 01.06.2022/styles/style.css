@@ -544,6 +544,13 @@ button.first-btn {
 		background: none;
 	}
 
+	.menu a:hover:not(.menu-active-link) {
+		color: #fff;
+		border-bottom: 2px solid #fff;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
 	.menu-active-link {
 		margin-left: 0;
 		color: #f0145a;
@@ -639,12 +646,6 @@ button.first-btn {
 		width: 405px;
 	}
 
-	/* #about-us hr {
-		transform: rotate(90deg);
-		width: 150%;
-		margin-top: 140px;
-	} */
-
 	.line-center {
 		width: 4px;
 		height: 280px;
@@ -680,16 +681,13 @@ button.first-btn {
 		padding: 30px 0;
 	}
 
-	/* #about-us hr {
-		width: 90%;
-	} */
+	.about-content {
+		display: flex;
+		justify-content: center;
+	}
 
 	.desktop-content {
 		margin: 0 130px;
-	}
-
-	.tab-content > .active {
-		margin-top: 30px;
 	}
 }
 
@@ -703,8 +701,4 @@ button.first-btn {
 	.desktop-content {
 		margin: 0 120px;
 	}
-
-	/* !#about-us hr {
-		! width: 60%;
-	!} */
 }
