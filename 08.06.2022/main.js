@@ -54,23 +54,41 @@ arr8.map(a => arr8.push(Math.round(Math.random() * 100)));
 
 // ! .sort()
 const arr9 = arr8.sort((a, b) => a - b);
+console.log(`Return new array`);
 console.log('.sort() up =>', arr9);
+console.log(`Return new array`);
 const arr10 = arr8.sort((a, b) => b - a);
 console.log('.sort() down =>', arr9);
 console.log('----------------------------------');
 
 // ! .shift()
 arr10.shift();
+console.log("Doesn't return new array");
 console.log('.shift() =>', arr10);
 console.log('----------------------------------');
 
 // ? forEach
 const arr11 = arr10.forEach(q => q * 2);
-console.log('.forEach() =>', arr11);
+console.error('.forEach() => not working! =>', arr11);
 console.log('----------------------------------');
 
 // TODO: .filter()
 const arr12 = arr10.filter(el => el < 0);
 
-// ? .fill()
-const arr13 = arr12.fill;
+// ? .fill() TODO: NOT WORKING!!!
+const arr13 = arr12.fill(arr2);
+
+// TODO: .filter()
+const arr14 = arr10.filter(el => el <= 50);
+
+// ! .forEach()
+console.log(`Return new array`);
+const arr15 = arr14.forEach(e => {
+	console.log('.forEach() =>', e);
+});
+console.log('----------------------------------');
+
+// TODO: .pop() / push() and .unshift()
+arr14.pop();
+arr14.push('World');
+arr14.unshift('Hello');
