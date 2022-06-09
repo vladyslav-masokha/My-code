@@ -33,3 +33,5 @@ const marks = privateMarks.split(',').map(el => +el);
 console.log('Marks =>', marks);
 const sumMarks = marks.reduce((a, b) => a + b);
 console.log('Sum =>', sumMarks);
+const minusMarks = marks.reduce((a, b) => a - b);
+console.log('Minus =>', minusMarks);
