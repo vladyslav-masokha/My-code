@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: #000;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.for-error::-webkit-input-placeholder {
+  color: red;
+}
+
+.for-error::-moz-placeholder {
+  color: red;
+}
+
+.for-error:-ms-input-placeholder {
+  color: red;
+}
+
+.for-error::-ms-input-placeholder {
+  color: red;
+}
+
+.for-error::placeholder {
+  color: red;
+}
+
+#random-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+#random-numbers #input-value {
+  width: 50vw;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+#random-numbers #send-btn {
+  width: 30vw;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.numbers {
+  width: 75vw;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.numbers span {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.3019607843);
+  border-radius: 10px;
+}
