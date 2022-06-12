@@ -23,6 +23,8 @@ const genElement = () => {
 		default:
 			const spanEl = document.createElement('span');
 			const numTextEl = document.createTextNode(genNumbers());
+			inputValue.placeholder = 'Enter numbers';
+			inputValue.classList.remove('for-error');
 
 			spanEl.append(numTextEl);
 			numbers[0].append(spanEl);
