@@ -8,6 +8,16 @@
   overflow-x: hidden;
 }
 
+::-moz-selection {
+  background: #9369ff;
+  color: #fff;
+}
+
+::selection {
+  background: #9369ff;
+  color: #fff;
+}
+
 body {
   background: teal;
   overflow: hidden;
