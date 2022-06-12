@@ -37,6 +37,15 @@ const genNumber = () => {
 	let num = [];
 	const liEl = document.createElement('li');
 
+	do {
+		console.log();
+	} while (
+		typeof amountValueEl === 'number' &&
+		Number.isNaN(amountValueEl) &&
+		amountValueEl != null &&
+		typeof amountValueEl !== undefined
+	);
+
 	switch (amountValueEl.value) {
 		case '':
 			amountValueEl.placeholder = 'Error, enter number of numbers again';
@@ -48,7 +57,6 @@ const genNumber = () => {
 				num[i] = Math.round(Math.random() * 100);
 				liEl.prepend(num[i] + ' ');
 			}
-			listEl.prepend(liEl);
 			numbersListEl.prepend(liEl);
 			amountValueEl.placeholder = 'Enter number of numbers';
 			amountValueEl.classList.remove('for-error');

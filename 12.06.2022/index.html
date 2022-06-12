@@ -13,30 +13,32 @@
 		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
-		<!-- ? TodoList -->
-		<section id="todo-list">
-			<div class="wrapper">
-				<div class="todo-list-inner">
-					<input type="text" placeholder="Enter text" id="input-value" />
-					<button id="btn-send">Send text</button>
+		<main class="page">
+			<!-- ? TodoList -->
+			<div id="todo-list">
+				<div class="wrapper">
+					<div class="todo-list-inner">
+						<input type="text" placeholder="Enter text" id="input-value" />
+						<button id="btn-send">Send text</button>
+					</div>
+					<ul id="list"></ul>
 				</div>
-				<ul id="list"></ul>
 			</div>
-		</section>
 
-		<!-- ? randomNumbers -->
-		<section id="random-numbers">
-			<div class="wrapper">
-				<div class="random-numbers-inner">
-					<input
-						type="text"
-						placeholder="Enter number of numbers"
-						id="amount-value"
-					/>
-					<button id="amount-send">Send</button>
+			<!-- ? randomNumbers -->
+			<div id="random-numbers">
+				<div class="wrapper">
+					<div class="random-numbers-inner">
+						<input
+							type="number"
+							placeholder="Enter number of numbers"
+							id="amount-value"
+						/>
+						<button id="amount-send">Send number of numbers</button>
+					</div>
+					<ul id="numbers-list"></ul>
 				</div>
-				<ul id="numbers-list"></ul>
 			</div>
-		</section>
+		</main>
 	</body>
 </html>

@@ -5,12 +5,19 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background: teal;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
   padding: 0;
   margin: 0;
 }
@@ -56,6 +63,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #list {
@@ -80,6 +88,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 100px 0;
+}
+#random-numbers .random-numbers-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #random-numbers #amount-value {
   width: 60vw;
@@ -108,17 +124,101 @@ body {
   padding: 10px;
   border: none;
   border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 #random-numbers #numbers-list {
   margin-top: 20px;
+  width: 85vw;
 }
 #random-numbers #numbers-list li {
   margin-top: 10px;
   margin: 10px auto;
-  width: 85vw;
   padding: 10px 15px;
   color: #fff;
   background: rgba(255, 255, 255, 0.3019607843);
   list-style: none;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .wrapper {
+    padding: 0 30px;
+  }
+
+  #todo-list {
+    display: block;
+  }
+  #todo-list .todo-list-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  #todo-list #input-value {
+    width: 40vw;
+  }
+  #todo-list #btn-send {
+    margin: 10px auto;
+  }
+  #todo-list #list {
+    margin: 20px auto;
+    width: 35vw;
+  }
+  #todo-list #list li {
+    width: auto;
+  }
+
+  #random-numbers {
+    display: block;
+    margin: 30px 0;
+  }
+  #random-numbers .random-numbers-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  #random-numbers #amount-value {
+    width: 40vw;
+  }
+  #random-numbers #amount-send {
+    margin: 10px auto;
+  }
+  #random-numbers #numbers-list {
+    margin: 20px auto;
+    width: 35vw;
+  }
+  #random-numbers #numbers-list li {
+    width: auto;
+  }
 }
