@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<!--! CSS -->
-	<link rel="stylesheet" href="./css/style.css" />
-	<!--! SCRIPTS -->
-	<script src="./js/main.js" defer></script>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>12.06.2022 (2) | toDoList</title>
+		<!-- ! Fonts Montserrat (Regular / Bold) / Kdam Thmor Pro (Regular)-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--! CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<!--! SCRIPTS -->
+		<script src="./js/main.js" defer></script>
+	</head>
+	<body>
+		<div id="page">
+			<!-- ! Header -->
+			<header id="header">
+				<div class="wrapper">
+					<h1>My toDoList</h1>
+				</div>
+			</header>
+
+			<!-- toDoList -->
+			<section id="todo-list">
+				<div class="wrapper">
+					<input type="text" placeholder="Enter text" id="input-value" />
+					<button id="btn-send">Send text</button>
+					<ul id="list"></ul>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>

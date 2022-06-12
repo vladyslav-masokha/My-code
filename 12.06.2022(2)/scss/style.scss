@@ -1,0 +1,89 @@
+// ! Fonts Montserrat (Regular / Bold) / Kdam Thmor Pro (Regular)
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+$font-other: 'Kdam Thmor Pro', sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #007a60;
+	font: {
+		family: $font-stack;
+	}
+}
+
+#header {
+	background: #7fffd4;
+	padding: 15px 0;
+	text-align: center;
+	color: #957dff;
+	font: {
+		size: $font-other;
+	}
+}
+
+.wrapper {
+	padding: 0 10px;
+}
+
+#todo-list {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	#input-value {
+		width: 60vw;
+		padding: 10px 15px;
+		outline-style: none;
+		border: none;
+		border-radius: 10px;
+	}
+
+	.for-error::placeholder {
+		color: #ff0000;
+	}
+
+	#btn-send {
+		width: 30vw;
+		padding: 10px;
+		outline-style: none;
+		border: none;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	#list {
+		margin-top: 20px;
+		li {
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 85vw;
+			margin: 10px auto;
+			background: #ffffff4d;
+			border: none;
+			border-radius: 10px;
+			padding: 5px 10px;
+			list-style: none;
+
+			.del-task {
+				cursor: pointer;
+				background: #ff0000;
+				color: #fff;
+				padding: 5px 10px;
+				border: none;
+				border-radius: 10px;
+				margin-left: 5px;
+			}
+		}
+	}
+}

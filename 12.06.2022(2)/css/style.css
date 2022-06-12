@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #007a60;
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  background: #7fffd4;
+  padding: 15px 0;
+  text-align: center;
+  color: #957dff;
+  font-size: "Kdam Thmor Pro", sans-serif;
+}
+
+.wrapper {
+  padding: 0 10px;
+}
+
+#todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+#todo-list #input-value {
+  width: 60vw;
+  padding: 10px 15px;
+  outline-style: none;
+  border: none;
+  border-radius: 10px;
+}
+#todo-list .for-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::-moz-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::placeholder {
+  color: #ff0000;
+}
+#todo-list #btn-send {
+  width: 30vw;
+  padding: 10px;
+  outline-style: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#todo-list #list {
+  margin-top: 20px;
+}
+#todo-list #list li {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85vw;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.3019607843);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  list-style: none;
+}
+#todo-list #list li .del-task {
+  cursor: pointer;
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+}
