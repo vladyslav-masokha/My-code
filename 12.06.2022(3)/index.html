@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Calculator v1.0</title>
 		<!-- ! Fonts Montserrat (Regular / Bold) / Kdam Thmor Pro (Regular)-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,15 +19,46 @@
 	</head>
 	<body>
 		<div id="page">
-
 			<!-- * Header -->
 			<header id="header">
-				<div class="wrapper"></div>
+				<div class="wrapper">
+					<div class="header__inner">
+						<h1>Calculator <span>v1.0</span></h1>
+					</div>
+				</div>
 			</header>
 
 			<!-- TODO: Calculator -->
 			<section id="calculator">
-				<div class="wrapper"></div>
+				<div class="wrapper">
+					<div class="calculator__inner">
+						<div id="first">
+							<input
+								type="number"
+								placeholder="Enter first number"
+								id="first-number"
+							/>
+							<button id="btn-send1">Send</button>
+						</div>
+						<div id="second">
+							<input
+								type="number"
+								placeholder="Choose operation: + or --"
+								id="choose-op"
+							/>
+							<button id="btn-send2">Send</button>
+						</div>
+						<div id="third">
+							<input
+								type="number"
+								placeholder="Enter first number"
+								id="second-number"
+							/>
+							<button id="btn-send3">Send</button>
+						</div>
+						<div id="result"></div>
+					</div>
+				</div>
 			</section>
 
 			<!-- ? Footer -->

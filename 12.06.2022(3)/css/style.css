@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: cornflowerblue;
+}
+
+.wrapper {
+  padding: 0 10px;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 139, 139, 0.3294117647);
+}
+#header .header__inner {
+  padding: 10px 0;
+  text-align: center;
+}
+#header .header__inner h1 {
+  color: #fff;
+}
+#header .header__inner h1 span {
+  color: #ff0000;
+}
+
+#calculator {
+  margin-top: 100px;
+}
+#calculator .calculator__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#calculator .calculator__inner #first-number,
+#calculator .calculator__inner #choose-op,
+#calculator .calculator__inner #second-number {
+  width: 60vw;
+  padding: 10px 15px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+#calculator .calculator__inner #btn-send1,
+#calculator .calculator__inner #btn-send2,
+#calculator .calculator__inner #btn-send3 {
+  width: 30vw;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
