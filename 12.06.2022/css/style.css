@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: teal;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0;
+}
+#todo-list #input-value {
+  width: 60vw;
+  padding: 10px 15px;
+  outline-style: none;
+  border: none;
+  border-radius: 10px;
+}
+#todo-list .for-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::-moz-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+#todo-list .for-error::placeholder {
+  color: #ff0000;
+}
+#todo-list #btn-send {
+  width: 30vw;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#list {
+  margin-top: 20px;
+}
+#list li {
+  margin-top: 10px;
+  margin: 10px auto;
+  width: 85vw;
+  padding: 10px 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3019607843);
+  list-style: none;
+  border-radius: 10px;
+}
+
+#random-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px 0;
+}
+#random-numbers #amount-value {
+  width: 60vw;
+  padding: 10px 15px;
+  outline-style: none;
+  border: none;
+  border-radius: 10px;
+}
+#random-numbers .for-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+#random-numbers .for-error::-moz-placeholder {
+  color: #ff0000;
+}
+#random-numbers .for-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+#random-numbers .for-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+#random-numbers .for-error::placeholder {
+  color: #ff0000;
+}
+#random-numbers #amount-send {
+  width: 30vw;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+#random-numbers #numbers-list {
+  margin-top: 20px;
+}
+#random-numbers #numbers-list li {
+  margin-top: 10px;
+  margin: 10px auto;
+  width: 85vw;
+  padding: 10px 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3019607843);
+  list-style: none;
+  border-radius: 10px;
+}

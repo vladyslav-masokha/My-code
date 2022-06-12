@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	background: teal;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+// TODO: TodoList
+#todo-list {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+
+	#input-value {
+		width: 60vw;
+		padding: 10px 15px;
+		outline-style: none;
+		border: none;
+		border-radius: 10px;
+	}
+
+	.for-error::placeholder {
+		color: #ff0000;
+	}
+
+	#btn-send {
+		width: 30vw;
+		padding: 10px;
+		border: none;
+		border-radius: 10px;
+	}
+}
+
+#list {
+	margin-top: 20px;
+	li {
+		margin-top: 10px;
+		margin: 10px auto;
+		width: 85vw;
+		padding: 10px 15px;
+		color: #fff;
+		background: #ffffff4d;
+		list-style: none;
+		border-radius: 10px;
+	}
+}
+
+// TODO: PlanList
+#random-numbers {
+	display: flex;
+	justify-content: center;
+	margin: 100px 0;
+
+	#amount-value {
+		width: 60vw;
+		padding: 10px 15px;
+		outline-style: none;
+		border: none;
+		border-radius: 10px;
+	}
+
+	.for-error::placeholder {
+		color: #ff0000;
+	}
+
+	#amount-send {
+		width: 30vw;
+		padding: 10px;
+		border: none;
+		border-radius: 10px;
+	}
+
+	#numbers-list {
+		margin-top: 20px;
+		li {
+			margin-top: 10px;
+			margin: 10px auto;
+			width: 85vw;
+			padding: 10px 15px;
+			color: #fff;
+			background: #ffffff4d;
+			list-style: none;
+			border-radius: 10px;
+		}
+	}
+}
