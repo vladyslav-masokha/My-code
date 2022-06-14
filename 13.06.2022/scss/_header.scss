@@ -1,0 +1,129 @@
+$font-stack: 'Montserrat', sans-serif;
+
+// ! Header
+.background-header {
+	background-image: linear-gradient(
+		180deg,
+		#22c0c3 0%,
+		#4fc7c9 21%,
+		#6dced0 30%,
+		#85d6d6 39%,
+		#9cdddd 46%,
+		#afe4e4 54%,
+		#c6ebeb 61%,
+		#d9f2f2 69%,
+		#ecf8f8 79%,
+		#ffffff 100%
+	);
+}
+
+.wrapper {
+	padding: 0 15vw;
+	margin: 0 auto;
+}
+
+.header {
+	background-image: url('../image/Background_image.png');
+	background-repeat: no-repeat;
+
+	&__body {
+		padding: 50px 0 320px 0;
+	}
+
+	// Nav
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.nav {
+			display: flex;
+			list-style: none;
+
+			&__link {
+				text-decoration: none;
+				font-weight: bold;
+				color: #fff;
+				margin-left: 20px;
+				font: {
+					family: $font-stack;
+					weight: 700;
+				}
+
+				&_tel {
+					background: #fff;
+					border-radius: 20px 20px 0 20px;
+					padding: 10px 15px;
+					color: #000;
+					box-shadow: 0px 0px 20px -8px #000;
+				}
+			}
+		}
+	}
+	// Title
+	&__title {
+		width: 30vw;
+		margin-top: 200px;
+
+		h1 {
+			color: #fff;
+			font: {
+				size: 76px;
+				family: $font-stack;
+				weight: 700;
+			}
+		}
+
+		h3 {
+			margin-top: 20px;
+			color: #fff;
+			font: {
+				size: 27px;
+				family: $font-stack;
+				weight: 700;
+			}
+		}
+
+		&_btn {
+			display: flex;
+			margin-top: 50px;
+			align-items: center;
+
+			button {
+				background-image: linear-gradient(
+					90deg,
+					#0edddd 0%,
+					#21ded4 11%,
+					#2de1cc 22%,
+					#35e3c3 33%,
+					#3de6bc 44%,
+					#45e8b2 56%,
+					#4deaa9 67%,
+					#50ed9e 78%,
+					#58ee94 89%,
+					#5bf188 100%
+				);
+				color: #fff;
+				border: none;
+				border-radius: 20px;
+				padding: 15px 30px;
+			}
+
+			a {
+				img {
+					margin-right: 10px;
+				}
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				margin-left: 25px;
+				color: #01b4e8;
+				font: {
+					size: 18px;
+					family: $font-stack;
+					weight: 700;
+				}
+			}
+		}
+	}
+}

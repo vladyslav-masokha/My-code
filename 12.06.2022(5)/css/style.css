@@ -1,0 +1,11 @@
+.header {
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		from(#fd2d2d00),
+		to(#22c1c3)
+	);
+	background: linear-gradient(0deg, #ffffff 0%, rgb(34, 193, 195) 100%);
+	padding: 100px 0;
+}
