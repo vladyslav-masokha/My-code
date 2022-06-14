@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: cadetblue;
+}
+
+.wrapper {
+  min-width: 320px;
+  padding: 0 2vw;
+  margin: 0 auto;
+}
+.wrapper h1 {
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+.wrapper #todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+}
+.wrapper #todo-list #input-value {
+  width: 60vw;
+  padding: 10px 15px;
+  border: 2px dotted #ff33ff;
+  border-radius: 10px;
+  margin: 0 auto;
+  outline: none;
+}
+.wrapper #todo-list .for-error::-webkit-input-placeholder {
+  color: #ff0000;
+}
+.wrapper #todo-list .for-error::-moz-placeholder {
+  color: #ff0000;
+}
+.wrapper #todo-list .for-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+.wrapper #todo-list .for-error::-ms-input-placeholder {
+  color: #ff0000;
+}
+.wrapper #todo-list .for-error::placeholder {
+  color: #ff0000;
+}
+.wrapper #todo-list #btn-send {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 30vw;
+  padding: 10px;
+  border: 2px dotted #ff33ff;
+  border-radius: 10px;
+  outline: none;
+}
+.wrapper #list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.631372549);
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 2px dotted #ff0000;
+  border-radius: 10px;
+  list-style: none;
+}
+.wrapper #list li .del-task {
+  cursor: pointer;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  color: #ff0000;
+  background: transparent;
+  padding: 5px 10px;
+}
