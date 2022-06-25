@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>25.06.2022</title>
+		<!-- Icons Font Awesome-->
+		<script
+			src="https://kit.fontawesome.com/ff48da9210.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Fonts Montserrat (Regular / Bold) / Kdam Thmor Pro (Regular)-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- SCRIPTS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/faker@5.5.3/dist/faker.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/gh/vladbash/hillel-helpers@master/src/students/script.js"
+			defer
+		></script>
+		<script src="./js/main.js" defer></script>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div id="page">
+			<!-- TODO: Header -->
+			<header class="header">
+				<div class="wrapper">
+					<div class="header__body">
+						<div class="logo">
+							<a href="./index.html" class="logo__link">25.06.2022</a>
+						</div>
+
+						<span id="clock"></span>
+					</div>
+				</div>
+			</header>
+
+			<!-- TODO: Main -->
+			<main class="main">
+				<div class="wrapper">
+					<div class="main__body">
+						<h1>Base students</h1>
+
+						<div class="students-base">
+							<div class="count-students">
+								<input
+									type="number"
+									placeholder="Enter number of students"
+									id="count-value"
+								/>
+								<button id="count-send">Show</button>
+							</div>
+							<div class="clear-list-btn">
+								<button>All delete</button>
+							</div>
+							<span class="count-error"
+								>Error, enter number of students again...</span
+							>
+
+							<ul id="student-list"></ul>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<!-- TODO: Footer -->
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer__inner">
+						<span class="copyright"
+							>&copy;2022 Vladyslav Masokha, 25.06.2022</span
+						>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/template" id="show-student-template">
+			<div class="student">
+				<li class='student-name'>Name: {{name}}</li>
+				<li class='student-marks'>Marks: [{{marks}}]</li>
+				<li class='student-specialty'>Specialty: {{specialty}}</li>
+				<hr>
+			</div>
+		</script>
+	</body>
+</html>

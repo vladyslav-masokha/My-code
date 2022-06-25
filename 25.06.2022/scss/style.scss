@@ -1,0 +1,163 @@
+$font-stack: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	padding: 0 15px;
+}
+
+#page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 320px;
+}
+
+.header {
+	background: crimson;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+
+	.logo {
+		&__link {
+			color: #eee;
+			font: {
+				family: $font-stack;
+				weight: 700;
+				style: italic;
+				size: 18px;
+			}
+		}
+	}
+
+	#clock {
+		color: #eee;
+		font: {
+			family: $font-stack;
+			weight: 700;
+			style: italic;
+			size: 18px;
+		}
+	}
+}
+
+.main {
+	padding: 30px 0;
+	max-width: 768px;
+
+	&__body {
+		box-shadow: 0 0 20px 5px #000;
+		padding: 10px;
+		h1 {
+			text-align: center;
+			color: #000;
+			font: {
+				family: $font-stack;
+				weight: 700;
+				style: italic;
+				size: 28px;
+			}
+		}
+	}
+
+	.count-students {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		#count-value {
+			width: 60vw;
+			border: 2px dotted purple;
+			border-radius: 10px;
+			padding: 5px 10px;
+			outline: none;
+		}
+
+		#count-send {
+			width: 30vw;
+			margin-left: 2vw;
+			outline: none;
+			border: 2px dotted purple;
+			border-radius: 10px;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+	}
+
+	.clear-list-btn {
+		margin-top: 5px;
+		button {
+			border: 2px dotted purple;
+			border-radius: 5px;
+			outline: none;
+			background: #9090ff;
+			color: #eee;
+			cursor: pointer;
+			font: {
+				family: $font-stack;
+				weight: 700;
+				style: italic;
+				size: 18px;
+			}
+		}
+	}
+
+	.count-error {
+		display: none;
+		text-align: center;
+		color: #f00;
+		background: #ff9a5f;
+		border: 2px solid #ff5e00;
+		margin-top: 5px;
+		border-radius: 5px;
+		font: {
+			family: $font-stack;
+			weight: 700;
+			style: italic;
+			size: 18px;
+		}
+	}
+
+	#student-list {
+		width: 80%;
+		margin: 10px auto 0 auto;
+		padding: 0;
+	}
+}
+
+.footer {
+	margin-top: auto;
+	background: crimson;
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+	}
+
+	.copyright {
+		color: #eee;
+		font: {
+			family: $font-stack;
+			weight: 700;
+			style: italic;
+			size: 16px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		margin: 0 auto;
+	}
+}
