@@ -1,0 +1,196 @@
+$font-stack: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#page {
+	min-width: 320px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #6e61dd;
+}
+
+.wrapper {
+	padding: 0 2vw;
+	margin: 0 auto;
+}
+
+// TODO: Header
+.header {
+	background: #283628;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+}
+.logo {
+	&__link {
+		color: #60a8ff;
+		font: {
+			size: 24px;
+			weight: 700;
+			family: $font-stack;
+		}
+	}
+}
+
+#clock {
+	color: #eee;
+	font: {
+		size: 18px;
+		weight: 700;
+		style: italic;
+		family: $font-stack;
+	}
+}
+
+b,
+#date {
+	display: none;
+}
+
+.nav {
+	padding: 0 0 10px 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	&::before {
+		content: '';
+		width: 95%;
+		height: 2px;
+		margin: 0 auto;
+		background: #eee;
+		opacity: 0.5;
+	}
+
+	&__link {
+		color: #eee;
+		font: {
+			size: 16px;
+			weight: 700;
+			family: $font-stack;
+		}
+	}
+
+	li {
+		margin-top: 10px;
+	}
+}
+
+// TODO: Main
+.main {
+	width: 100%;
+	padding: 10px 0;
+
+	&__body {
+		padding: 15px;
+		border: 2px dotted #eee;
+
+		h1 {
+			text-align: center;
+			margin: 0 0 10px 0;
+			color: #eee;
+			font: {
+				size: 32px;
+				weight: 700;
+				family: $font-stack;
+			}
+		}
+	}
+	#list {
+		.list-el {
+			color: #00ff0a;
+
+			span {
+				color: #00ffe0;
+			}
+		}
+	}
+}
+
+// TODO: Footer
+.footer {
+	margin-top: auto;
+	background: #283628;
+
+	&__body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+	}
+}
+.copyright {
+	color: #eee;
+	font: {
+		size: 14px;
+		weight: 700;
+		family: $font-stack;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__body {
+			.clock-date {
+				display: flex;
+			}
+
+			b {
+				display: block;
+				color: #000;
+				margin: 0 10px;
+				font: {
+					size: 18px;
+					weight: 700;
+					style: italic;
+					family: $font-stack;
+				}
+			}
+
+			#date {
+				display: block;
+				color: #eee;
+				font: {
+					size: 18px;
+					weight: 700;
+					style: italic;
+					family: $font-stack;
+				}
+			}
+		}
+	}
+	.main {
+		width: 768px;
+		margin: 0 auto;
+
+		&__body {
+			padding: 20px;
+		}
+
+		#list {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			height: 450px;
+			align-items: center;
+		}
+	}
+}
