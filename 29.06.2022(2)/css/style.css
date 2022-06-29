@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+nav,
+ul,
+ol,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+ul,
+ol,
+li,
+ul[class],
+ol[class],
+li[class] {
+	list-style: none;
+}
+
+a {
+	text-decoration-skip-ink: auto;
+	text-decoration: none;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	min-height: 100vh;
+	min-width: 320px;
+}
+
+.wrapper {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	box-shadow: 0 0 10px 5px #222;
+	background: #eee;
+}
+
+.header__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__body hr {
+	width: 90%;
+	background: #222;
+}
+
+#date {
+	text-align: center;
+	color: #222;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-style: italic;
+}
+
+.logo-time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__link {
+	font-size: 24px;
+	color: #70b0ff;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#time {
+	font-size: 24px;
+	color: #ff70ed;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.theme {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 0 10px 0;
+	font-size: 24px;
+}
+
+.theme i {
+	cursor: pointer;
+}
+
+.content {
+	margin: 120px 0 30px 0;
+}
+
+.content__body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-item {
+	max-width: 375px;
+	margin: 20px auto 0 auto;
+	padding: 10px;
+	box-shadow: 0 0 15px 0px #222;
+}
+
+.footer {
+	margin-top: auto;
+	background: #89fff4;
+}
+
+.footer__body {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.footer__body span {
+	font-size: 18px;
+	color: #8670ff;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+}

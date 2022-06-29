@@ -1,0 +1,25 @@
+.header {
+  box-shadow: 0 0 10px 5px #222;
+  background: #eee;
+}
+.header__body hr {
+  background: #222;
+}
+#date {
+  color: #222;
+}
+.logo__link {
+  color: #70b0ff;
+}
+#time {
+  color: #ff70ed;
+}
+.card-item {
+  box-shadow: 0 0 15px 0px #222;
+}
+.footer {
+  background: #89fff4;
+}
+.footer__body span {
+  color: #8670ff;
+}

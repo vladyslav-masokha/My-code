@@ -1,0 +1,49 @@
+body {
+	background: #222;
+}
+
+.header {
+	box-shadow: 0 0 10px 5px #eee;
+	background: #222;
+}
+
+.header__body hr {
+	background: #eee;
+}
+
+#date {
+	color: #eee;
+}
+
+.logo__link {
+	color: #004daa;
+}
+
+#time {
+	color: #8b0079;
+}
+
+.theme i {
+	color: #eee;
+}
+
+.change-theme[data-theme='dark'] {
+	display: none;
+}
+
+.change-theme[data-theme='light'] {
+	display: block;
+}
+
+.card-item {
+	color: #eee;
+	box-shadow: 0 0 5px 0px #eee;
+}
+
+.footer {
+	background: #007e71;
+}
+
+.footer__body span {
+	color: #120077;
+}
