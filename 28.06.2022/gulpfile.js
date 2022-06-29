@@ -4,7 +4,6 @@ const del = require('del');
 const rename = require('gulp-rename');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
 
 const paths = {
 	styles: {
@@ -39,7 +38,6 @@ const scripts = () => {
 			sourcemaps: 'true',
 		})
 		.pipe(babel())
-		.pipe(uglify())
 		.pipe(concat('main.js'))
 		.pipe(gulp.dest(paths.scripts.dest));
 };

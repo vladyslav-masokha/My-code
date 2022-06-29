@@ -1,10 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 
+/* Specify box sizing */
+* {
+	box-sizing: border-box;
+
+	&::before,
+	&::after {
+		box-sizing: border-box;
+	}
+}
+
+/* Removing padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Removing margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+nav,
+ul,
+ol,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* Set the main default settings for the body */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Remove the default styling for all ul and il that have a class and don't have class attribute*/
+ul,
+ol,
+li,
+ul[class],
+ol[class],
+li[class] {
+	list-style: none;
+}
+
+/* A elements that do not have a class are reset to default styles */
+a {
+	text-decoration-skip-ink: auto;
+	text-decoration: none;
+
+	&:not([class]) {
+		text-decoration-skip-ink: auto;
+		text-decoration: none;
+	}
+}
+
+/* Making it easy to work with images */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Specify a clear periodicity in the data flow of the article*/
+article>*+* {
+	margin-top: 1em;
+}
+
+/* Inheriting fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Removing all animations and transitions for people who prefer not to use them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
 #page {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	min-height: 100vh;
+	min-width: 320px;
 }
 
 body {
@@ -18,6 +115,89 @@ body {
 }
 
 .wrapper {
-	min-width: 320px;
 	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+
+	&.dark-mode {
+			color: #fff;
+			background: #373737;
+		}
+	
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #eee;
+		padding: 10px 15px;
+	}
+}
+
+.logo {
+	&__link {
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #373737;
+		font-style: italic;
+	}
+}
+
+#time {
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #ff7a7a;
+}
+
+.nav {
+	padding: 10px 0;
+	background: #cb92ff;
+
+	li {
+		width: 80px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__link {
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #fff;
+			
+		// &:hover {
+		// 	border-bottom: 2px solid #fff;
+		// 	transition: color .3s ease;
+		// }
+	}
+}
+
+.footer {
+	margin-top: auto;
+	background: #cb92ff;
+
+	&.dark-mode {
+			color: #fff;
+			background: #373737;
+		}
+		
+	&__body {
+		padding: 10px;
+		text-align: center;
+		span {
+			color: #fff;
+			font-size: 18px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-style: italic;
+		}
+	}
 }
