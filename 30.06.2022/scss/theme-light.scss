@@ -1,0 +1,64 @@
+body {
+	background: #eee;
+	color: #222;
+}
+
+.local-date {
+	color: #222;
+	background: #eee;
+}
+
+.header {
+	&__row {
+		background: #586cff;
+	}
+}
+
+.logo {
+	&__link {
+		color: #eee;
+	}
+}
+
+nav {
+	ul {
+		li {
+			a {
+				color: #fff;
+
+				&.active,
+				&:hover {
+					color: #111;
+					background: #eee;
+				}
+			}
+		}
+	}
+
+	.menu-btn i {
+		color: #eee;
+	}
+}
+
+@media (max-width: 920px) {
+	nav ul {
+		background: #586cff;
+	}
+
+	nav ul li a {
+
+		&.active,
+		&:hover {
+			background: none;
+			color: #c0ff00;
+		}
+	}
+}
+
+.footer {
+	background: #586cff;
+}
+
+.copyright {
+	color: #eee;
+}

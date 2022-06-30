@@ -1,0 +1,33 @@
+$font-stack: 'Montserrat', sans-serif;
+
+::selection {
+	color: #fff;
+	background: #a373ff;
+}
+
+#page {
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+.local-date {
+	padding: 10px 15px;
+	text-align: center;
+	width: 100%;
+}
+
+#local-date {
+	font: {
+		size: 24px;
+		family: $font-stack;
+		weight: 700;
+		style: italic;
+	}
+}

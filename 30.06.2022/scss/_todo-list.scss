@@ -1,0 +1,102 @@
+.todo-list {
+
+	width: 90vw;
+	margin: 50px auto 0 auto;
+	padding: 15px;
+	background: #ff6464;
+}
+
+.controls {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.value-error {
+	
+	display: flex;
+	justify-content: center;
+	margin: 15px 0 0 0;
+
+	span {
+		width: 70%;
+		text-align: center;
+		color: #fff;
+		background: #ff6a00;
+		padding: 10px;
+		border-radius: 5px;
+		font: {
+			size: 18px;
+			family: $font-stack;
+		}
+	}
+}
+
+#input-value {
+	width: 45vw;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 15px;
+
+	&:focus {
+		outline: 2px solid #76ff76;
+	}
+}
+
+#btn_send-task {
+	width: 30vw;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-left: 2vw;
+}
+
+#list {
+	width: 80vw;
+	margin-top: 50px;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	font: {
+		size: 32px;
+		family: $font-stack;
+		weight: 700;
+		style: italic;
+	}
+}
+
+.task {
+	width: 80%;
+	margin: 0 auto;
+	background: #ffffff4d;
+	color: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	margin-top: 10px;
+	font: {
+		size: 18px;
+		family: $font-stack;
+	}
+
+	button {
+		background: none;
+		border: none;
+		outline: none;
+		
+
+		i {
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+					color: #ff6464;
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,51 @@
+body {
+  background: #fff;
+  transition: background 1s ease;
+}
+
+.header {
+  box-shadow: 0 0 20px 0 #222;
+}
+
+.nav-and-theme {
+  background: #77a6ff;
+}
+
+.nav__link {
+  color: #eee;
+}
+
+.title {
+  color: #222;
+}
+
+.card {
+  box-shadow: 0 0 10px 0 #222;
+}
+
+.local-time {
+  color: #222;
+}
+
+#big-time {
+  color: #000;
+}
+
+.footer {
+  background: #ff7eff;
+}
+.footer__body span {
+  color: #eee;
+}
+
+.change-theme[data-theme=light] {
+  display: none;
+}
+
+.change-theme[data-theme=dark] {
+  display: block;
+}
+
+.fa-moon {
+  color: #222;
+}

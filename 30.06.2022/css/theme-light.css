@@ -1,0 +1,46 @@
+body {
+  background: #eee;
+  color: #222;
+}
+
+.local-date {
+  color: #222;
+  background: #eee;
+}
+
+.header__row {
+  background: #586cff;
+}
+
+.logo__link {
+  color: #eee;
+}
+
+nav ul li a {
+  color: #fff;
+}
+nav ul li a.active, nav ul li a:hover {
+  color: #111;
+  background: #eee;
+}
+nav .menu-btn i {
+  color: #eee;
+}
+
+@media (max-width: 920px) {
+  nav ul {
+    background: #586cff;
+  }
+
+  nav ul li a.active, nav ul li a:hover {
+    background: none;
+    color: #c0ff00;
+  }
+}
+.footer {
+  background: #586cff;
+}
+
+.copyright {
+  color: #eee;
+}

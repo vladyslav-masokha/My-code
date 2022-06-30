@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>29.06.2022</title>
+	<!-- TODO: Icons Font awesome-->
+	<script src="https://kit.fontawesome.com/26827a1d02.js" crossorigin="anonymous"></script>
+
+	<!-- TODO: Font Montserrat (Regular, Bold, Bold Italic)-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+	<!-- TODO: CSS -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" title="theme" href="#">
+
+	<!-- TODO: JS -->
+	<script src="./js/main.js" defer></script>
+
+	<!-- TODO: Favicon -->
+	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="page">
+
+		<!-- Header -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__body">
+
+					<!-- Logo -->
+					<div class="logo">
+						<a href="./index.html" class="logo__link">
+							29.06.2022
+						</a>
+					</div>
+
+					<hr>
+
+					<!-- Navigation -->
+					<nav class="nav">
+						<li>
+							<a href="#" class="nav__link nav__link-active">Home</a>
+						</li>
+						<li>
+							<a href="#" class="nav__link">Services</a>
+						</li>
+						<li>
+							<a href="#" class="nav__link">Contacts</a>
+						</li>
+					</nav>
+					
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<section class="content">
+			<div class="wrapper">
+				<div class="content__body">
+					<div class="cards"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__body">
+
+					<div class="theme">
+						<i class="fa-solid fa-sun change-theme" data-theme="light"></i>
+						<i class="fa-solid fa-moon change-theme" data-theme="dark"></i>
+					</div>
+
+					<!-- Logo -->
+					<div class="f-logo">
+						<a href="./index.html" class="f-logo__link">
+							29.06.2022
+						</a>
+					</div>
+
+					<!-- Navigation -->
+					<nav class="f-nav">
+						<li><a href="#" class="f-nav__link f-nav__link-active">Home</a></li>
+						<li><a href="#" class="f-nav__link">Services</a></li>
+						<li><a href="#" class="f-nav__link">Contacts</a></li>
+					</nav>
+
+					<!-- Copyright -->
+					<div class="copyright">
+						<span>&copy;2022 Vladyslav Masokha</span>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/template" id="card-template">
+		<div class="card">
+			<h2>{{titleCard}}</h2>
+			<p>{{cardText}}</p>
+			<button>{{moreReadText}}</button>
+		</div>
+	</script>
+</body>
+</html>

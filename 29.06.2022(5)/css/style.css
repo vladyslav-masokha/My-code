@@ -1,0 +1,142 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  min-width: 290px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #9100ff;
+}
+.header__body hr {
+  width: 70%;
+}
+
+.logo {
+  text-align: center;
+}
+.logo__link {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nav {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.nav li:not(:first-child) {
+  margin: 5px 0 0 0;
+}
+.nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.nav__link-active {
+  color: #1d92ff;
+  border-bottom: 2px solid #1d92ff;
+  padding-bottom: 2px;
+}
+.nav__link:hover {
+  color: #1d92ff;
+  border-bottom: 2px solid #1d92ff;
+}
+
+.content {
+  margin: 30px 0;
+  padding: 0 15px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 10px;
+  max-width: 375px;
+  box-shadow: 0 0 10px 0 #000;
+  padding: 10px;
+}
+.card button {
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #f00;
+}
+.card button:hover {
+  background: #f00;
+  transition: background 0.6s ease;
+}
+
+.footer {
+  margin-top: auto;
+}
+.footer__body {
+  padding: 20px 0;
+}
+
+.theme {
+  position: absolute;
+  margin: 0 0 0 30px;
+}
+.theme i {
+  font-size: 32px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.f-logo {
+  text-align: center;
+  margin-top: 50px;
+}
+.f-logo__link {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.f-nav {
+  margin-top: 15px;
+  text-align: center;
+}
+.f-nav li:not(:first-child) {
+  margin-top: 5px;
+}
+.f-nav__link {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.f-nav__link-active {
+  padding-bottom: 2px;
+}
+.f-nav__link:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+.copyright span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.change-theme[data-theme=light] {
+  display: none;
+}
