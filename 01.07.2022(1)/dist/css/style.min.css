@@ -1,0 +1,228 @@
+/* Specify box sizing */
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Removing padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Removing margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+nav,
+ul,
+ol,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the main default settings for the body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove the default styling for all ul and il that have a class and don't have class attribute*/
+ul,
+ol,
+li,
+ul[class],
+ol[class],
+li[class] {
+  list-style: none;
+}
+
+/* A elements that do not have a class are reset to default styles */
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Making it easy to work with images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Specify a clear periodicity in the data flow of the article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inheriting fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Removing all animations and transitions for people who prefer not to use them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTTrailers;
+  font-display: swap;
+  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+#page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.header__logo a {
+  color: #eee;
+  line-height: 25px;
+  font-family: "CormorantUpright", sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 700;
+}
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.header__nav ul li {
+  margin: 0 5px;
+}
+.header__nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "CormorantUpright", sans-serif;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.header__nav ul li a.active, .header__nav ul li a:hover {
+  color: #111;
+  background: #eee;
+}
+.header__nav .menu-btn i {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: #eee;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .header__nav .menu-btn i {
+    display: block;
+  }
+  .header ul {
+    font-family: "CormorantUpright", sans-serif;
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    display: block;
+    transition: all 0.5s ease;
+    background: #586cff;
+  }
+  .header ul li {
+    width: 100%;
+    margin: 13% 0 0 0;
+  }
+  .header ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .header ul li a.active, .header ul li a:hover {
+    background: none;
+    color: #c0ff00;
+  }
+}
+#click:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+
+#click:checked ~ ul {
+  left: 0;
+}
+
+#click:checked ~ ul li a {
+  margin-left: 0px;
+}
+
+.theme i {
+  padding: 10px;
+  box-shadow: 0 0 10px 0 #000;
+}

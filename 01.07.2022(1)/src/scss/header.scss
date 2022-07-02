@@ -1,0 +1,151 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  &__logo {
+    a {
+      color: #eee;
+      line-height: 25px;
+
+      font: {
+        family: $font-stack;
+        style: italic;
+        size: 32px;
+        weight: 700;
+      }
+    }
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+
+      li {
+        margin: 0 5px;
+
+        a {
+          text-decoration: none;
+
+          font: {
+            size: 18px;
+            weight: 400;
+            family: $font-stack;
+          }
+
+          padding: 8px 15px;
+          border-radius: 5px;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+          color: #fff;
+
+          &.active,
+          &:hover {
+            color: #111;
+            background: #eee;
+          }
+        }
+      }
+    }
+
+    .menu-btn i {
+      font: {
+        size: 24px;
+      }
+
+      cursor: pointer;
+      display: none;
+      color: #eee;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .header {
+    &__nav {
+      .menu-btn i {
+        display: block;
+      }
+    }
+
+    ul {
+      font: {
+        family: $font-stack;
+      }
+
+      position: fixed;
+      top: 50px;
+      left: -100%;
+      height: 100vh;
+      text-align: center;
+      display: block;
+      transition: all .5s ease;
+      background: #586cff;
+    }
+
+    ul li {
+      width: 100%;
+      margin: 13% 0 0 0;
+
+      a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        font: {
+          size: 18px;
+          weight: 700;
+        }
+
+        &.active,
+        &:hover {
+          background: none;
+          color: #c0ff00;
+        }
+      }
+    }
+  }
+}
+
+#click:checked~.menu-btn i:before {
+  content: "\f00d";
+}
+
+#click:checked~ul {
+  left: 0;
+}
+
+#click:checked~ul li a {
+  margin-left: 0px;
+}
+
+.theme {
+  i {
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #000;
+  }
+}
