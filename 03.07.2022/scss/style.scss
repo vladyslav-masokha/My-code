@@ -1,0 +1,68 @@
+$font-stack: 'Montserrat',
+sans-serif;
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  --background: #eee;
+  --background-header: #4e9bff;
+  --background-about: #aa85ee;
+  --background-methods-array: #4c4b9b;
+  --background-methods-object: #2fb3ff;
+  --background-dom-elements: #20546c;
+  --background-documentation: #0049a8;
+  --background-footer: #c281ff;
+  --color-text: #222;
+  --color-about-text: #000e8b;
+  --color-doc: #aa85ee;
+  --color-doc-text: #eee;
+  --color-methods: #fff700;
+
+  --shadow-theme: 0 0 10px 0 #222;
+
+
+  &.active {
+    --background: #222;
+    --background-header: #0049a8;
+    --background-about: #2b007c;
+    --background-methods-array: #020064;
+    --background-methods-object: #00287eec;
+    --background-dom-elements: #00193e;
+    --background-documentation: #000244;
+    --background-footer: #5c00a8;
+    --color-text: #eee;
+    --color-about-text: #838fff;
+    --color-methods: #5dcabd;
+    --color-doc: #5bc3ff;
+    --color-doc-text: #eee;
+    --shadow-theme: 0 0 10px 0 #eee;
+  }
+
+  background: var(--background);
+  transition: all 0.5s ease;
+}
+
+#page {
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@import '_header';
+@import '_about';
+@import '_methods-arrays';
+@import '_methods-objects';
+@import '_dom-elements';
+@import '_documentation';
+@import '_footer';

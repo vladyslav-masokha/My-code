@@ -1,0 +1,91 @@
+$font-stack: 'Montserrat',
+sans-serif;
+
+.form {
+  min-width: 290px;
+  max-width: 520px;
+  margin: 100px auto;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 #222;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+
+    font: {
+      family: $font-stack;
+      size: 32px;
+      weight: 700;
+      style: italic;
+    }
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    font: {
+      family: $font-stack;
+      size: 24px;
+    }
+  }
+
+  &__login-field,
+  &__password-field {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+
+    font: {
+      family: $font-stack;
+      size: 16px;
+    }
+
+    &:focus {
+      border-bottom: 2px solid #222;
+      transition: .3s ease;
+    }
+  }
+
+  .password-field {
+    position: relative;
+  }
+
+  &__password-btn {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    cursor: pointer;
+
+    font: {
+      size: 18px;
+    }
+
+    &.active {
+      &::after {
+        content: '';
+        width: 25px;
+        height: 3px;
+        background: #222;
+				position: absolute;
+				right: -1px;
+				top: 8px;
+				transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__register-btn {
+    margin-top: 25px;
+    padding: 10px 0;
+    cursor: pointer;
+
+    font: {
+      family: $font-stack;
+      size: 18px;
+    }
+  }
+}

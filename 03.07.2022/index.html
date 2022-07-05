@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>03.07.2022</title>
+	<!-- TODO: Icons Font awesome-->
+	<script src="https://kit.fontawesome.com/26827a1d02.js" crossorigin="anonymous"></script>
+
+	<!-- TODO: Font Montserrat (Regular, Bold, Bold Italic)-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+	<!-- TODO: CSS -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- TODO: JS -->
+	<script src="./js/main.js" defer></script>
+
+	<!-- TODO: Favicon -->
+	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="page">
+
+		<!-- TODO: Header -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__body">
+
+						<!-- Logo -->
+						<div class="logo">
+							<a href="./index.html" class="logo__link">JavaScript</a>
+						</div>
+					
+						<nav>
+							<input type="checkbox" id="click">
+							<label for="click" class="menu-btn">
+								<i class="fas fa-bars"></i>
+							</label>
+
+							<!-- Navigation -->
+							<ul>
+								<li><a href="#about" class="header__nav-link">Головна</a></li>
+								<li><a href="#methods-arrays" class="header__nav-link">Масиви</a></li>
+								<li><a href="#methods-objects" class="header__nav-link">Об'єкти</a></li>
+								<li><a href="#dom-elements" class="header__nav-link">Взаємодія з DOM</a></li>
+								<li><a href="#documentation" class="header__nav-link">Документація</a></li>
+								<li class="theme">
+									<i class="fa-solid fa-moon change-theme"></i>
+								</li>
+								<span id="local-clock"></span>
+							</ul>
+						</nav>
+						
+					</div>
+					
+			</div>
+		</header>
+
+		<!-- ? About -->
+		<div class="about" id="about">
+			<div class="wrapper">
+				<div class="about__body">
+					<div class="about__title">
+						<h1>Що є в JavaScript?</h1>
+						<h3>В JavaScript є методи, об'єкти, функції та багато іншого...</h3>
+						<a href="#methods-arrays">Більше деталей</a>
+					</div>
+					<div class="about__image">
+						<img src="./image/javascript.png" alt="JavaScript" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ? Methods arrays-->
+		<div class="methods-arrays" id="methods-arrays">
+			<div class="wrapper">
+				<div class="methods-arrays__body">
+					<div class="methods-arrays__title">
+						<h2>Методи масива</h2>
+						<h3>Приблизно всі методи масива:</h3>
+					</div>
+					<div class="methods-arrays__content">
+						<div class="methods-arrays__columns">
+							<ul>
+								<li>.concat()</li>
+								<li>.copyWithin()</li>
+								<li>.entries()</li>
+								<li>.every()</li>
+								<li>.fill()</li>
+								<li>.filter()</li>
+								<li>.find()</li>
+								<li>.findIndex()</li>
+								<li>.forEach()</li>
+								<li>.from()</li>
+								<li>.includes()</li>
+								<li>.indexOf()</li>
+								<li>.isArray()</li>
+								<li>.join()</li>
+								<li>.keys()</li>
+							</ul>
+							<ul>
+								<li>.lastIndexOf()</li>
+								<li>.map()</li>
+								<li>.pop()</li>
+								<li>.push()</li>
+								<li>.reduce()</li>
+								<li>.reduceRight()</li>
+								<li>.reverse()</li>
+								<li>.shift()</li>
+								<li>.slice()</li>
+								<li>.some()</li>
+								<li>.sort()</li>
+								<li>.splice()</li>
+								<li>.toString()</li>
+								<li>.unshift()</li>
+								<li>.valueOf()</li>
+							</ul>
+						</div>
+						<div class="methods-arrays__image">
+							<img src="./image/methods-arrays.jpg" alt="arrays" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ? Methods objects -->
+		<div class="methods-objects" id="methods-objects">
+			<div class="wrapper">
+				<div class="methods-objects__body">
+					<div class="methods-objects__title">
+						<h2>Методи об'єктів</h2>
+						<h3>Приблизно всі методи об'єктів:</h3>
+					</div>
+					<div class="methods-objects__content">
+						<div class="methods-objects__column">
+							<ul>
+								<li>Shallow copy — Object.assign()</li>
+								<li>Deep copy — JSON.parse() & JSON.stringify()</li>
+								<li>Object.create()</li>
+								<li>Object.entries()</li>
+								<li>Object.keys()</li>
+								<li>Object.values()</li>
+								<li>Object.freeze()</li>
+							</ul>
+						</div>
+						<div class="methods-objects__column_image">
+							<img src="./image/Methods objects.jpg" alt="objects" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ? DOM elements -->
+		<div class="dom-elements" id="dom-elements">
+			<div class="wrapper">
+				<div class="dom-elements__body">
+					<div class="dom-elements__title">
+						<h2>Взаємодія з DOM</h2>
+						<h3>Приблизно всі взаємодії з DOM:</h3>
+					</div>
+					<div class="dom-elements__content">
+						<div class="dom-elements__column">
+							<ul>
+								<li>.createElement()</li>
+								<li>.createTextNode()</li>
+								<li>.getElementById()</li>
+								<li>.append()</li>
+								<li>.prepend()</li>
+								<li>.classList.add()</li>
+								<li>.classList.remove()</li>
+								<li>.getElementsByTagName()</li>
+								<li>.getElementsByClassName()</li>
+								<li>.querySelector()</li>
+								<li>.querySelectorAll()</li>
+								<li>.className</li>
+								<li>.innerHTML</li>
+								<li>.outerHTML</li>
+								<li>.insertAdjacentElement()</li>
+								<li>.insertAdjacentHTML()</li>
+								<li>.insertAdjacentText()</li>
+								<li>.stopPropagation()</li>
+								<li>.stopImmediatePropagation()</li>
+							</ul>
+						</div>
+						<div class="dom-elements__image">
+							<img src="./image/dom-class-hierarchy.svg" alt="dom" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="documentation" id="documentation">
+			<div class="wrapper">
+				<div class="documentation__body">
+					<div class="documentation__title">
+						<h2>Документація</h2>
+						<h3>Значення елементів:</h3>
+					</div>
+
+					<div class="documentation__content">
+						<p>
+						<span class="d-name">Рекурсія -</span>
+						це коли функція у своєму тілі викликає саму себе. Функцію, що викликає сама себе, називають <span>рекурсивною
+						функцією</span>. Виклик рекурсивної функції називається <span>рекурсивним викликом</span>.
+					</p>
+
+					<p>
+						<span class="d-name">Делегування подій -</span>
+						корисний шаблон, тому що дозволяє відстежувати події на безлічі елементів за допомогою лише одного обробника.
+						<br>
+						<span>Для роботи делегування подій потрібно 3 кроки:</span>
+						<br>
+						<mark>Визначити батька елементів для відстеження подій.</mark>
+						<br>
+						<mark>Прикріпити на нього обробник подій.</mark>
+						<br>
+						<mark>Використовувати <u>event.target</u> для вибору цільового елемента.</mark>
+					</p>
+
+					<p>
+						<span class="d-name">DOM <span>(Document Object Model)</span> -</span>
+						це об'єктна модель документа, яку браузер створює в пам'яті комп'ютер на основі HTML-кода отриманого їм від сервера.
+					</p>
+
+					<p>
+						<span class="d-name">Функція -</span>
+						це об'єкт, що самовикликається.
+					</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ? Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__copyright">
+					<span>&copy;2022. Vladyslav Masokha</span>
+					<p>Content by MDN</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+#page {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@import '_variables';
+@import '_header';
+@import '_about';
+@import '_methods-array';
+@import '_methods-object';
+@import '_interacting-with-dom';
+@import '_documentation';
+@import '_footer';

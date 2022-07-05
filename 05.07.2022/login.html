@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- TODO: Icons Font awesome-->
+	<script src="https://kit.fontawesome.com/26827a1d02.js" crossorigin="anonymous"></script>
+
+	<!-- TODO: Font Montserrat (Regular, Bold, Bold Italic)-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+	<!-- TODO: CSS -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- TODO: JS -->
+	<script src="./js/main2.js" defer></script>
+
+	<!-- TODO: Favicon -->
+	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="page">
+
+		<!-- Header -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__body">
+					<span class="local-date"></span>
+					<a href="./login.html" target="_blank"><span>Link:</span> Login form</a>
+					<span class="local-time"></span>
+				</div>
+			</div>
+		</header>
+
+		<section class="content">
+			<div class="wrapper">
+				<div class="content__body">
+					<h1 class="log-title">Login form</h1>
+					<form action="#">
+						<label class="label">
+							Username:
+							<input type="text" placeholder="Enter your username...">
+						</label>
+						<label class="label">
+							Password:
+							<div class="password">
+								<input type="password" placeholder="Enter your password...">
+								<i class="fa-solid fa-eye"></i>
+								<span id="password-hidden"></span>
+							</div>
+						</label>
+						<input type="submit" value="login">
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__body">
+					<span class="copyright">&copy;2022 Vladyslav Masokha</span>
+					<span class="dates"></span>
+				</div>
+			</div>
+		</footer>
+		</div>
+
+</body>
+</html>

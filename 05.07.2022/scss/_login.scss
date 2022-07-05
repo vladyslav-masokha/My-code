@@ -1,0 +1,50 @@
+.content {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+
+  &__body {
+    padding: 10px 15px;
+  }
+}
+
+.log-title {
+  text-align: center;
+
+  font: {
+    size: 32px;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+  }
+}
+
+.password {
+  position: relative;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+
+#password-hidden {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  top: 14px;
+  right: 2px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}

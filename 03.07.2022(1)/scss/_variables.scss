@@ -1,0 +1,41 @@
+$font-stack: 'Montserrat',
+sans-serif;
+
+:root {
+  // Colors
+  --color-red: #f00;
+  --color-light-red: #ff6161;
+  --color-dark-red: #550000;
+  --color-green: #009200;
+  --color-light-green: #61ff61;
+  --color-dark-green: #004100;
+  --color-purple: #800080;
+  --color-light-purple: #ff57ff;
+  --color-dark-purple: #3f003f;
+  --color-blue: #0000ff;
+  --color-light-blue: #3e3eff;
+  --color-yellow: #ffff64;
+}
+
+// Light and dark theme
+body {
+  --main-bg: #eee;
+  --header-bg: #4e9bff;
+  --methods-array-background: #3030ff;
+  --methods-object-background: #530093;
+  --interacting-with-dom-background: #243574;
+  --documentation-background: #993131;
+  --main-text: #eee;
+  --main-shadow: 0 0 10px #222;
+
+  &.dark {
+    --main-bg: #222;
+    --header-bg: #0049a8;
+    --methods-array-background: #000072;
+    --methods-object-background: #21003a;
+    --interacting-with-dom-background: #000c36;
+    --documentation-background: #3f0000;
+    --main-text: #eee;
+    --main-shadow: 0 0 10px #eee;
+  }
+}

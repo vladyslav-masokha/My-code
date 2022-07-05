@@ -1,0 +1,73 @@
+// About
+.about {
+  background: url("../image/about-bg.jpeg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  margin-top: 109px;
+
+  // About body
+  &__body {
+    margin: 200px 0;
+    padding: 0 15px;
+  }
+
+  // Title
+  &__title {
+    max-width: 290px;
+
+    // Title
+    h1 {
+      color: var(--main-text);
+
+      font: {
+        size: 42px;
+        family: $font-stack;
+        weight: 700;
+      }
+    }
+
+    // Subtitle
+    h3 {
+      color: var(--color-light-green);
+      margin: 0 0 20px 0;
+
+      font: {
+        size: 18px;
+        family: $font-stack;
+        weight: 700;
+      }
+    }
+
+    // Button
+    a {
+      margin-top: 40px;
+      padding: 10px 15px;
+      color: var(--color-yellow);
+      background: var(--color-light-blue);
+      box-shadow: 7px 7px 0 0 #eee;
+      border-radius: 0 10px 0px 10px;
+
+      font: {
+        family: $font-stack;
+        size: 16px;
+        weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    &__body {
+      padding: 30px;
+    }
+
+    &__title {
+      h1 {
+        font: {
+          size: 62px;
+        }
+      }
+    }
+  }
+}

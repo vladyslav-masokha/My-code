@@ -1,0 +1,29 @@
+:root {
+  --color-red: #f00;
+  --color-light-red: #ff6161;
+  --color-dark-red: #550000;
+  --color-green: #009200;
+  --color-light-green: #61ff61;
+  --color-dark-green: #004100;
+  --color-purple: #800080;
+  --color-light-purple: #ff57ff;
+  --color-dark-purple: #3f003f;
+  --color-blue: #0000ff;
+  --color-light-blue: #5656ff;
+  --color-dark-blue: #000072;
+  --main-bg: #eee;
+  --breakpoint-768px: 768px;
+  --breakpoint-1024px: 1024px;
+  --breakpoint-1440px: 1440px;
+}
+
+body {
+  --header-bg: #53fff1;
+  --main-text: #eee;
+  --main-shadow: 0 0 10px #222;
+}
+body.dark {
+  --main-bg: #222;
+  --main-text: #eee;
+  --main-shadow: 0 0 10px #eee;
+}

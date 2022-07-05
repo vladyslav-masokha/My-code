@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript documentation | New project/new design</title>
+	<!-- TODO: Icons Font awesome-->
+	<script src="https://kit.fontawesome.com/26827a1d02.js" crossorigin="anonymous"></script>
+
+	<!-- TODO: Font Montserrat (Regular, Bold, Bold Italic)-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+	<!-- TODO: CSS -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- TODO: JS -->
+	<script src="./js/main.js" defer></script>
+
+	<!-- TODO: Favicon -->
+	<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+<body class="dark">
+
+	<div id="page">
+
+		<!-- TODO: Header -->
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__body">
+
+					<div class="clock-and-date">
+						<span id="local-time"></span>
+						<span id="local-date"></span>
+					</div>
+					
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="./index.html" class="header__logo_link">
+								JavaScript
+								<span>(doc)</span>
+							</a>
+						</div>
+						<nav class="header__nav">
+							<li><a href="#about" class="header__nav_link">Головна</a></li>
+							<li><a href="#methods-array" class="header__nav_link">Масиви</a></li>
+							<li><a href="#methods-object" class="header__nav_link">Об'єкти</a></li>
+							<li><a href="#interacting-with-dom" class="header__nav_link">Взаємодія з DOM</a></li>
+							<li><a href="#documentation" class="header__nav_link">Документація</a></li>
+							<li class="theme">
+								<i class="fa-solid fa-moon" data-theme></i>
+							</li>
+							<li><span id="time"></span></li>
+						</nav>
+						<button class="burger">
+							<span class="burger__line"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+	
+		<!-- TODO: About -->
+		<div class="about" id="about">
+			<div class="wrapper">
+				<div class="about__body">
+					<div class="about__title">
+						<h1>Що є в JavaScript?</h1>
+						<h3>В JavaScript є методи, об'єкти, функції та багато іншого...</h3>
+						<a href="#methods-array">Більше деталей</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- TODO: Methods array -->
+		<div class="methods-array" id="methods-array">
+			<div class="wrapper">
+				<div class="methods-array__body">
+						<h2 class="methods-array__title">Методи масива</h2>
+						<hr>
+						<ul class="methods-array__content"></ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- TODO: Methods object -->
+		<div class="methods-object" id="methods-object">
+			<div class="wrapper">
+				<div class="methods-object__body">
+					<h2 class="methods-object__title">Методи об'єктів</h2>
+					<hr>
+					<ul class="methods-object__content"></ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- TODO: Methods object -->
+		<div class="interacting-with-dom" id="interacting-with-dom">
+			<div class="wrapper">
+				<div class="interacting-with-dom__body">
+					<h2 class="interacting-with-dom__title">Взаємодія з DOM</h2>
+					<hr>
+					<ul class="interacting-with-dom__content"></ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- TODO: Methods object -->
+		<div class="documentation" id="documentation">
+			<div class="wrapper">
+				<div class="documentation__body">
+					<h2 class="documentation__title">Документація</h2>
+					<hr>
+					<ul class="documentation__content"></ul>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__body">
+					<span class="copyright">
+						<span>©2022. Vladyslav Masokha</span>
+						<p>Content by MDN</p>
+					</span>
+					<span class="local-date">
+						Сьогоднішня дата:
+						<span id="date"></span>
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/template" id="li-item-template">
+		<li>{{name}}</li>
+	</script>
+
+	<script type="text/template" id="doc-item-template">
+			<p>
+				<span>{{name}}</span>
+				{{text}}
+			</p>
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+// Header
+.header {
+  width: 100%;
+  background: var(--header-bg);
+  position: fixed;
+
+  // Header body
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  // Logo
+  &__logo {
+
+    // Logo link
+    &_link {
+      color: var(--color-yellow);
+
+      font: {
+        size: 24px;
+        family: $font-stack;
+        weight: 700;
+        style: italic;
+      }
+
+      span {
+        color: var(--color-light-green);
+      }
+    }
+  }
+
+  // Navigation
+  &__nav {
+    --header-height: 109px;
+    position: fixed;
+    max-width: 300px;
+    width: 60%;
+    overflow-y: auto;
+    top: var(--header-height);
+    height: calc(100% - 109px);
+    right: 0;
+    background: var(--header-bg);
+    padding: 0 15px 30px 15px;
+    z-index: 1000;
+    transform: translate(100%);
+    transition: transform .5s ease-in-out;
+
+    // Navigation link
+    &_link {
+      color: var(--main-text);
+
+      font: {
+        size: 18px;
+        family: $font-stack;
+        weight: 400;
+      }
+    }
+
+    li {
+      text-align: center;
+      margin: 30px auto 0 auto;
+    }
+  }
+}
+
+// Block time and date
+.clock-and-date {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eee;
+}
+
+// Local time and date
+#local-time,
+#local-date,
+#time {
+  color: var(--main-text);
+
+  font: {
+    size: 28px;
+    family: $font-stack;
+    weight: 700;
+    style: italic;
+  }
+}
+
+#local-time {
+  display: none;
+}
+
+// Burger
+.burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+
+  // Center line
+  &__line {
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+  }
+
+  // Top and bottom line
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    transition: transform .5s ease-in-out, top .5s ease-in-out, bottom .5s ease-in-out;
+  }
+
+  // Top line
+  &::before {
+    top: 0;
+  }
+
+  // Bottom line
+  &::after {
+    bottom: 0;
+  }
+}
+
+.nav--visible {
+  transform: none;
+}
+
+.burger--active .burger__line {
+  opacity: 0;
+}
+
+.burger--active::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.burger--active::after {
+  transform: rotate(-45deg);
+  top: 50%;
+  bottom: auto;
+}
+
+// Stop scrool when open navigation
+.stop-scroll {
+  overflow: hidden;
+}
+
+// Dark and light theme
+.theme {
+  width: 40px;
+  height: 40px;
+  box-shadow: var(--main-shadow);
+  cursor: pointer;
+}
+
+.fa-moon,
+.fa-sun {
+  padding: 9px;
+
+  font: {
+    size: 24px;
+  }
+}
+
+// Breakpoint (max-width: 1024px)
+@media (min-width: 1024px) {
+
+  .header {
+
+    &__body {
+      padding: 10px 30px;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      width: auto;
+      overflow: hidden;
+      background: transparent;
+      transform: none;
+      position: static;
+      height: auto;
+      max-width: 100%;
+      padding: 0;
+
+      li {
+        margin: 0 0 0 20px;
+      }
+
+      li:first-child {
+        margin: 0;
+      }
+
+      &_link {
+        &:hover {
+          color: var(--color-yellow);
+          border-bottom: 1px solid var(--color-yellow);
+          transition: color .5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  // Time and date
+  .clock-and-date {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Local date
+  #local-time {
+    display: block;
+  }
+
+  // Local time in navigation
+  #time {
+    display: none;
+  }
+
+  // Theme
+  .theme {
+    margin: 0;
+  }
+
+  // Burger
+  .burger {
+    display: none;
+  }
+}
